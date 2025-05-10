@@ -56,7 +56,6 @@ async def handle_web_evaluation(arguments: Dict[str, Any], ctx: Context, api_key
     """
     # Initialize log server immediately (if not already running)
     try:
-        # stop_log_server() # Commented out stop_log_server
         start_log_server()
         # Give the server a moment to start
         await asyncio.sleep(1)
@@ -189,8 +188,6 @@ async def handle_web_evaluation(arguments: Dict[str, Any], ctx: Context, api_key
     
     # MCP tool function expects list[list[TextContent, ImageContent]] - see docstring in mcp_server.py
     send_log(f"Returning wrapped response: list[ [{len(response)} items] ]", "🎁")
-    
-    # return [response]  # This structure may be incorrect
     
     # The correct structure based on docstring is list[list[TextContent, ImageContent]]
     # i.e., a list containing a single list of mixed content items

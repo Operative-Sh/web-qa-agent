@@ -1611,6 +1611,7 @@ dependencies = [
     { name = "mcp" },
     { name = "playwright" },
     { name = "python-dotenv" },
+    { name = "requests" },
     { name = "ruff" },
 ]
 
@@ -1627,6 +1628,7 @@ requires-dist = [
     { name = "mcp", specifier = ">=1.6.0" },
     { name = "playwright", specifier = ">=1.41.0" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
+    { name = "requests", specifier = ">=2.20.0" },
     { name = "ruff", specifier = ">=0.11.9" },
 ]
 

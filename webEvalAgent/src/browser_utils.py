@@ -16,9 +16,6 @@ from .log_server import send_log
 # Import Playwright types
 from playwright.async_api import async_playwright, Error as PlaywrightError, Page as PlaywrightPage
 
-# Local imports (assuming browser_manager is potentially still used for singleton logic elsewhere, or can be removed if fully replaced)
-# from browser_manager import PlaywrightBrowserManager # Commented out if not needed
-
 # Browser-use imports
 from browser_use.agent.service import Agent
 from browser_use.browser.browser import Browser, BrowserConfig
@@ -34,8 +31,6 @@ _original_bring_to_front = None
 # This prevents the browser window from stealing focus during execution.
 async def _no_bring_to_front(self, *args, **kwargs):
     return None
-
-# We'll apply and remove the patch in run_browser_task
 
 # Global variables
 agent_instance = None  # Store agent instance

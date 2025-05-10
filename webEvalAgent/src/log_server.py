@@ -117,7 +117,7 @@ def set_url_and_task(url: str, task: str):
     current_task = task
 
 def send_log(message: str, emoji: str = "➡️", log_type: str = 'agent'):
-    """Sends a log message with an emoji prefix and type to all connected clients."""
+    """Send a log message with an emoji prefix and type to all connected clients."""
     # Ensure socketio context is available. If called from a non-SocketIO thread,
     # use socketio.emit directly.
     try:

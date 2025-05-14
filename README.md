@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/operative-sh-web-eval-agent-badge.png)](https://mseep.ai/app/operative-sh-web-eval-agent)
+
 # 🚀 operative.sh web-eval-agent MCP Server
 
 > *Let the coding agent debug itself, you've got better things to do.*
